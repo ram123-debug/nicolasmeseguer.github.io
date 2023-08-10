@@ -164,6 +164,10 @@ li > .active {
     transition: background-color .5s; /* For modern browsers */
 }
 
+
+
+
+
 #lan {
 	height: 40px;
     width: 40px;
@@ -210,15 +214,15 @@ li > .active {
 }
 
 .blog-tags > .t-purple {
-	background-color: rgb(137, 70, 255, 0.8);
+	background-color: rgba(237, 233, 244, 0.8);
 }
 
 .blog-tags > .t-lime {
-	background-color: rgba(118, 185, 0, 0.8);
+	background-color: rgba(246, 248, 243, 0.8);
 }
 
 .blog-tags > .t-sky {
-	background-color: rgba(37, 197, 223, 0.8);
+	background-color: rgba(236, 242, 244, 0.8);
 }
 
 .clickable {

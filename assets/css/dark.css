@@ -1,9 +1,7 @@
 :root {
-	--t-color: #D8DEE9;
-	--h-color: #ffff;
+	--t-color: #000;
 
-	--bg-color: #383838;
-	--nv-color: #121212;
+	--bg-color: #fff;
 }
 
 body {
@@ -12,41 +10,37 @@ body {
 }
 
 h1, h2, h3, h4, b {
-	color: var(--h-color) !important;
+	color: var(--t-color) !important;
 }
 
 #top-nav {
-	background-color: var(--nv-color) !important;
+	background-color:rgb(248, 249, 250) !important;
 }
 
 .nav-link {
-	color: rgba(255, 255, 255, 0.9) !important;
+	color: rgba(0, 0, 0, 0.9) !important;
 }
 
 .nav-link:hover{
-	color: rgba(255, 255, 255, 0.7) !important;
+	color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.t-secondary { 
+	color: rgb(108,117,125);
 }
 
 .link-dark {
-	color: var(--h-color) !important;
+	color: #212529 !important;
 }
 
-.link-dark:hover, .link-dark:focus {
-	color: #DBDBDB !important;
-}
-
-.navbar-toggler-icon {
-	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.navbar-toggler:focus {
-	box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.7) !important;
+.link-dark:hover {
+	color: #1c1e20 !important;
 }
 
 /* OPTION BUTTON */
 .options-button {
-	background-color: var(--bs-gray-700);
-	border: 1px solid #fff;
+	background-color: var(--bg-color);
+	border: 1px solid #000;
 }
 
 #options-toggler {
@@ -58,14 +52,20 @@ h1, h2, h3, h4, b {
 }
 
 #theme:hover, #lan:hover {
-	background-color: var(--bg-color);
+	background-color: #d3d3d3;
+}
+
+/* BLOG - Related */
+
+.blog-short {
+	color: #717378;
 }
 
 /* TEACHING RELATED */
 .academic-name {
-	color: #0dcaf0;
+	color: #22517d;
 }
 
 .academic-block {
-	border-left: 2px #0dcaf0 solid;
+	border-left: 2px #22517d solid;
 }
