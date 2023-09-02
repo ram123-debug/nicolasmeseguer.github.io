@@ -6,7 +6,10 @@ $('#conferencesContent').hide();
 $('#projectsContent').hide();
 $('#tutorialsContent').hide();
 $('#academicContent').hide();
+$('#ecaContent').hide();
 $('#particularContent').hide();
+
+
 /* Template
 $('#nameContent').hide();
 */
@@ -146,7 +149,22 @@ $(document).ready(function(){
 			activateDiv('#academicContent');
 		}
 	});
+   // Handle 'ECA' content
+    $('#eca').click(function(e) {
 
+		// If the div has already the class active, no need to reload the divs...
+		if(!$(e.target).hasClass('active')) {
+			// Update navbar
+			clearActiveLinks();
+			activateLink(e);
+
+			// Hide other contents
+			clearActiveDivs();
+
+			// Show current content
+			activateDiv('#ecaContent');
+		}
+	});
 	// Handle 'Particular' content
 	$('#particular').click(function(e) {
 
