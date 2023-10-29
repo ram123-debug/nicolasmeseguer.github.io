@@ -98,7 +98,22 @@ $(document).ready(function(){
 			activateDiv('#educationContent');
 		}
 	});
+	
+    $('#experience').click(function(e) {
 
+		// If the div has already the class active, no need to reload the divs...
+		if(!$(e.target).hasClass('active')) {
+			// Update navbar
+			clearActiveLinks();
+			activateLink(e);
+
+			// Hide other contents
+			clearActiveDivs();
+
+			// Show current content
+			activateDiv('#experienceContent');
+		}
+	});
 	// Handle 'Publications' content
 	$('#publications').click(function(e) {
 
@@ -199,22 +214,22 @@ $(document).ready(function(){
 	// 	}
 	// });
 
-	// Handle 'Experience' content
-	// $('#experience').click(function(e) {
+	//Handle 'Experience' content
+	$('#experience').click(function(e) {
 
-	// 	// If the div has already the class active, no need to reload the divs...
-	// 	if(!$(e.target).hasClass('active')) {
-	// 		// Update navbar
-	// 		clearActiveLinks();
-	// 		activateLink(e);
+		// If the div has already the class active, no need to reload the divs...
+		if(!$(e.target).hasClass('active')) {
+			// Update navbar
+			clearActiveLinks();
+			activateLink(e);
 
-	// 		// Hide other contents
-	// 		clearActiveDivs();
+			// Hide other contents
+			clearActiveDivs();
 
-	// 		// Show current content
-	// 		activateDiv('#experienceContent');
-	// 	}
-	// });
+			// Show current content
+			activateDiv('#experienceContent');
+		}
+	});
 
 	// Handle 'Projects' content
 	// $('#projects').click(function(e) {
